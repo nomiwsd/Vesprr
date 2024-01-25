@@ -1,0 +1,127 @@
+import ideaimg from "../../assets/Group3.png";
+import servicebg2 from "../../assets/herobg.png";
+import { LuSendHorizonal } from "react-icons/lu";
+const IdeaSection = () => {
+  return (
+    <section>
+      <div className="bg-white max-width py-20 px-4 md:px-10 lg:px-20">
+        <div className="flex flex-col justify-center items-start gap-3">
+          <h1 className="text-xl md:text-5xl font-semibold">
+            Your idea into <span className="text-primarycl">reality</span>
+          </h1>
+          <p className="text-xl font-medium font-dmsans text-black max-w-[990px]">
+            We start every web development project with a project manager from
+            Vesprr interviewing you about the goal with the project. This is for
+            us to be able to come up with a solution for your business, estimate
+            a timeline, and come up with a budget.
+          </p>
+        </div>
+        <div className="flex flex-col md:flex-row justify-between my-10">
+          <div className="flex flex-col gap-5 w-full md:w-3/4">
+            <div className="flex  gap-3 w-full">
+              <div>
+                {" "}
+                <div className="bg-white text-primarycl rounded-full w-24 h-24 flex justify-center items-center shadow-lg">
+                  <p className="text-3xl font-black text-center">1</p>
+                </div>
+              </div>
+              <div className="flex flex-col gap-3 py-4">
+                <h3 className="text-2xl font-bold text-primarycl">Your Idea</h3>
+                <p className="text-base font-medium font-dmsans">
+                  In order for us at Vesprr to know that we are a good fit for
+                  your project we always start with screening questions in order
+                  to make sure that we are a suitable match for your company.
+                </p>
+              </div>
+            </div>
+            <div className="flex  gap-3 w-full">
+              <div>
+                {" "}
+                <div className="bg-white text-primarycl rounded-full w-24 h-24 flex justify-center items-center shadow-lg">
+                  <p className="text-3xl font-black text-center">2</p>
+                </div>
+              </div>
+              <div className="flex flex-col gap-3 py-4">
+                <h3 className="text-2xl font-bold text-primarycl">
+                  Strategy Meeting
+                </h3>
+                <p className="text-base font-medium font-dmsans">
+                  This meeting will be a meeting where we together go over our
+                  proposed strategy on how we can reach your website goals. Here
+                  we will establish a project update system where you will be
+                  able to follow the whole process from start to finish.
+                </p>
+              </div>
+            </div>
+            <div className="flex  gap-3 w-full">
+              <div>
+                {" "}
+                <div className="bg-white text-primarycl rounded-full w-24 h-24 flex justify-center items-center shadow-lg">
+                  <p className="text-3xl font-black text-center">3</p>
+                </div>
+              </div>
+              <div className="flex flex-col gap-3 py-4">
+                <h3 className="text-2xl font-bold text-primarycl">
+                  Agile and Scrum framework
+                </h3>
+                <p className="text-base font-medium font-dmsans">
+                  In this step we will have a team meeting with the project
+                  manager and the lead developer and designer. Then we will be
+                  working using and agile and scrum framework in order to make
+                  sure to deliver your project on time and within budget.
+                </p>
+              </div>
+            </div>
+            <div className="flex  gap-3 w-full">
+              <div>
+                {" "}
+                <div className="bg-white text-primarycl rounded-full w-24 h-24 flex justify-center items-center shadow-lg">
+                  <p className="text-3xl font-black text-center">4</p>
+                </div>
+              </div>
+              <div className="flex flex-col gap-3 py-4">
+                <h3 className="text-2xl font-bold text-primarycl">
+                  Your Website Goes Live
+                </h3>
+                <p className="text-base font-medium font-dmsans">
+                  The final checks of the website will happen, we will make sure
+                  that all tracking pixels, links and user interface is
+                  compatible with all different devices. We will also perform a
+                  few different tests to make sure that the website is optimised
+                  for user experience.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="w-full md:w-1/4">
+            <img
+              src={ideaimg}
+              alt=""
+              className="w-full max-h-[500px] object-cover"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="relative mb-10">
+        <img src={servicebg2} alt="" className="absolute right-0 bottom-0 max-h-80 z-10" />
+        <div className="px-4 md:px-10 lg:px-20 relative z-30">
+      <div className="flex  justify-between items-center py-6 px-4 bg-secondarybg  max-width rounded-md">
+            <div className="flex flex-col">
+                <h2 className="text-5xl font-bold text-[#181818]">Let’s work together</h2>
+                <p className="text-xl font-normal text-[#808080]">Want to discuss an opportunity to create something great? I’m ready when you are.</p>
+            </div>
+            <div>
+
+            <button className=" flex items-center gap-2 bg-primarycl text-white text-sm font-medium text-center px-6 py-3 rounded-md">
+            <LuSendHorizonal className="text-lg font-bold" />  Get In Touch
+          </button>
+            </div>
+        </div>
+        </div>
+      </div>
+      
+    </section>
+  );
+};
+
+export default IdeaSection;
