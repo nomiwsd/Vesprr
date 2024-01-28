@@ -15,15 +15,15 @@ import { Navigation, Pagination } from 'swiper/modules';
 import { FaStar } from "react-icons/fa6";
 const Contactus = () => {
   return (
-    <section>
-      <div className="relative">
+    <section className="overflow-hidden">
+      <div className="relative overflow-hidden">
         <img
           src={herobg}
           alt=""
           className="absolute z-20 right-0 hidden md:block md:top-3/4 h-80"
         />
         {/* HeroSection */}
-        <div className="bg-primarybg">
+        <div className="bg-primarybg overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-10 lg:px-20 py-10 max-width">
             <div className="flex flex-col justify-center items-start gap-3" data-aos="fade-right"
               data-aos-duration='750'

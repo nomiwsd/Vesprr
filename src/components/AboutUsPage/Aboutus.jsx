@@ -16,7 +16,7 @@ import { projectsdata } from "../../utils/data";
 const Aboutus = () => {
   return (
     <section>
-      <div className="relative">
+      <div className="relative overflow-hidden">
         <img
           src={herobg}
           alt=""

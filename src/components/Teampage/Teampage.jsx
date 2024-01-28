@@ -9,7 +9,7 @@ import servicevector2 from "../../assets/Vector2.png";
 const Teampage = () => {
   return (
     <section>
-      <div className="relative">
+      <div className="relative overflow-hidden">
         <img
           src={herobg}
           alt=""

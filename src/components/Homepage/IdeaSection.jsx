@@ -3,7 +3,7 @@ import servicebg2 from "../../assets/herobg.png";
 import { LuSendHorizonal } from "react-icons/lu";
 const IdeaSection = () => {
   return (
-    <section>
+    <section className="overflow-hidden">
       <div className="bg-white max-width py-20 px-4 md:px-10 lg:px-20">
         <div className="flex flex-col justify-center items-start gap-3" data-aos="fade-left"
                 data-aos-duration='1300'

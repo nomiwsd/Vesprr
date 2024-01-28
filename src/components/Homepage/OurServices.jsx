@@ -4,7 +4,7 @@ import { CgArrowLongRight } from "react-icons/cg";
 import { cardsdata, membersdata } from "../../utils/data";
 const OurServices = () => {
   return (
-    <section>
+    <section className="overflow-hidden">
       <div className="bg-secondarybg relative">
         <img
           src={servicebg}

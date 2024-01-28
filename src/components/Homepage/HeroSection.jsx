@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <div className="relative">
 
-      <div className="relative">
+      <div className="relative overflow-hidden">
         <img src={herobg} alt="" className="absolute z-20 right-0 top-[35%] h-80" />
         {/* HeroSection */}
         <div className="bg-primarybg">

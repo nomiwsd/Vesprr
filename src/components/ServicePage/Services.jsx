@@ -11,7 +11,7 @@ import { CgArrowLongRight } from "react-icons/cg";
 const Services = () => {
   return (
     <section>
-      <div className="relative">
+      <div className="relative overflow-hidden">
         <img
           src={herobg}
           alt=""

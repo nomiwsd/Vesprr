@@ -11,7 +11,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import { FaStar } from "react-icons/fa6";
 const TestimonialSection = () => {
   return (
-    <section>
+    <section className="overflow-hidden">
       <div className="flex flex-col justify-center items-center gap-3">
         <h5 className="text-2xl font-bold text-primarycl">Testimonials</h5>
         <h2 className="text-[#292525] text-2xl md:text-5xl font-bold">Our Happy Clients</h2>
