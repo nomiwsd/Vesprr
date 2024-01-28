@@ -12,6 +12,10 @@ export default {
         secondarylinks: "#9D76C7",
         primarylinks: "#18191F",
         footerlinks: "#3B3C3E",
+        servicespecialbg:'#cdc9d2',
+        servicetext:'#292525',
+        contactformbg:'#F6F6F6',
+        bordercl:'#EBEBEB'
       },
       fontFamily: {
         dmsans:'DM Sans',

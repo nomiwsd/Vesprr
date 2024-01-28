@@ -124,7 +124,7 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
-            <Link to="/contactus">
+            <Link to="/contactus" onClick={closeMenu}>
               <button className="block md:hiiden bg-primarycl text-white text-sm font-medium text-center px-3 py-2 rounded-md">
                 Contact Us
               </button>

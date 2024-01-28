@@ -7,7 +7,7 @@ import { MdLocalPhone, MdMailOutline, MdWhatsapp } from "react-icons/md";
 const Footer = () => {
   return (
     <footer>
-      <div className="bg-primarybg">
+      <div className="bg-primarybg relative z-10">
         <div
           className="flex flex-col md:flex-row justify-between items-center  px-4 py-16 md:px-16 lg:px-20 max-width bg-auto bg-no-repeat bg-left"
           style={{

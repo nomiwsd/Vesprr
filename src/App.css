@@ -1,13 +1,75 @@
- @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500&display=swap');
-.max-width{
-    max-width: 1512px;
-    margin: 0 auto;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500&display=swap");
+.max-width {
+  max-width: 1512px;
+  margin: 0 auto;
 }
-.max-width2{
-    max-width: 1912px;
-    margin: 0 auto;
+.max-width2 {
+  max-width: 1912px;
+  margin: 0 auto;
 }
-.App{
-    font-family: 'Inter',sans-serif;
+.App {
+  font-family: "Inter", sans-serif;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-pagination {
+  z-index: 1000 !important;
+}
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 10px !important;
+  top: var(--swiper-pagination-top, auto);
+  left: 0;
+  width: 100%;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: black !important;
+  background-color: white !important;
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 100% !important;
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  top: 40% !important;
+  right: -10px !important;
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  top: 40% !important;
+  left: -10px !important;
+}
+.swiper-button-prev:after, .swiper-button-next:after {
+  font-size: 24px !important;
+}
+@media (max-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
 }

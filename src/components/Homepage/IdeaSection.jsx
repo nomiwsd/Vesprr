@@ -18,7 +18,7 @@ const IdeaSection = () => {
         </div>
         <div className="flex flex-col md:flex-row justify-between my-10">
           <div className="flex flex-col gap-5 w-full md:w-3/4">
-            <div className="flex  gap-3 w-full">
+            <div className="flex flex-col md:flex-row gap-3 w-full">
               <div>
                 {" "}
                 <div className="bg-white text-primarycl rounded-full w-24 h-24 flex justify-center items-center shadow-lg">
@@ -34,7 +34,7 @@ const IdeaSection = () => {
                 </p>
               </div>
             </div>
-            <div className="flex  gap-3 w-full">
+            <div className="flex flex-col md:flex-row  gap-3 w-full">
               <div>
                 {" "}
                 <div className="bg-white text-primarycl rounded-full w-24 h-24 flex justify-center items-center shadow-lg">
@@ -53,7 +53,7 @@ const IdeaSection = () => {
                 </p>
               </div>
             </div>
-            <div className="flex  gap-3 w-full">
+            <div className="flex flex-col md:flex-row gap-3 w-full">
               <div>
                 {" "}
                 <div className="bg-white text-primarycl rounded-full w-24 h-24 flex justify-center items-center shadow-lg">
@@ -72,7 +72,7 @@ const IdeaSection = () => {
                 </p>
               </div>
             </div>
-            <div className="flex  gap-3 w-full">
+            <div className="flex flex-col md:flex-row gap-3 w-full">
               <div>
                 {" "}
                 <div className="bg-white text-primarycl rounded-full w-24 h-24 flex justify-center items-center shadow-lg">
@@ -93,7 +93,7 @@ const IdeaSection = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/4">
+          <div className=" w-full md:w-1/4">
             <img
               src={ideaimg}
               alt=""
@@ -105,10 +105,10 @@ const IdeaSection = () => {
       <div className="relative mb-10">
         <img src={servicebg2} alt="" className="absolute right-0 bottom-0 max-h-80 z-10" />
         <div className="px-4 md:px-10 lg:px-20 relative z-30">
-      <div className="flex  justify-between items-center py-6 px-4 bg-secondarybg  max-width rounded-md">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-4 py-6 px-4 bg-secondarybg  max-width rounded-md">
             <div className="flex flex-col">
-                <h2 className="text-5xl font-bold text-[#181818]">Let’s work together</h2>
-                <p className="text-xl font-normal text-[#808080]">Want to discuss an opportunity to create something great? I’m ready when you are.</p>
+                <h2 className="text-2xl md:text-5xl font-bold text-[#181818]">Let’s work together</h2>
+                <p className="text-base md:text-xl font-normal text-[#808080]">Want to discuss an opportunity to create something great? I’m ready when you are.</p>
             </div>
             <div>
 

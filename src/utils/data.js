@@ -4,10 +4,20 @@ import avatarimg3 from "../assets/webdesign.png";
 import avatarimg4 from "../assets/magnifyer.png";
 import avatarimg5 from "../assets/startup.png";
 import avatarimg6 from "../assets/layers.png";
+import userimg1 from "../assets/userimg(1).jpg";
+import userimg2 from "../assets/userimg(2).jpg";
+import userimg3 from "../assets/userimg(3).jpg";
+import userimg4 from "../assets/userimg(4).jpg";
+import userimg5 from "../assets/userimg(5).jpg";
+import projectimg1 from "../assets/projectimg1.png";
+import projectimg2 from "../assets/projectimg2.png";
+import projectimg3 from "../assets/projectimg3.png";
+import projectimg4 from "../assets/projectimg2.png";
 import Iconimg1 from "../assets/people.png";
 import Iconimg2 from "../assets/hands.png";
 import Iconimg3 from "../assets/hand.png";
 import Iconimg4 from "../assets/cardicon.png";
+
 export const cardsdata = [
   {
     id: 1,
@@ -52,7 +62,38 @@ export const cardsdata = [
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
   },
 ];
-
+export const teamdata = [
+  {
+    id: 1,
+    Image: userimg1,
+    membername: "Kevin Jeppesen",
+    memberdesignation: "Web Developer",
+  },
+  {
+    id: 2,
+    Image: userimg2,
+    membername: "Kevin Wail",
+    memberdesignation: "Web Designer",
+  },
+  {
+    id: 3,
+    Image: userimg3,
+    membername: "Harry Brook",
+    memberdesignation: "Project Manager",
+  },
+  {
+    id: 4,
+    Image: userimg4,
+    membername: "Jhony Bairstow",
+    memberdesignation: "CEO",
+  },
+  {
+    id: 5,
+    Image: userimg5,
+    membername: "Kevin Jeppesen",
+    memberdesignation: "Dev Ops",
+  },
+];
 export const membersdata = [
   {
     id: 1,
@@ -77,5 +118,36 @@ export const membersdata = [
     Image: Iconimg4,
     numberdata: "1,926,436",
     detaildata: "Payments",
+  },
+];
+
+export const projectsdata = [
+  {
+    id: 1,
+    Image: projectimg1,
+    Projectname: "Trebble",
+    ProjectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus vitae tortor sapien, lectus scelerisque porttitor. Dolor nulla bibendum ",
+    ProjectLink: "",
+  },
+  {
+    id: 2,
+    Image: projectimg2,
+    Projectname: "Charity",
+    ProjectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus vitae tortor sapien, lectus scelerisque porttitor. Dolor nulla bibendum ",
+    ProjectLink: "",
+  },
+  {
+    id: 3,
+    Image: projectimg3,
+    Projectname: "Hubble",
+    ProjectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus vitae tortor sapien, lectus scelerisque porttitor. Dolor nulla bibendum ",
+    ProjectLink: "",
+  },
+  {
+    id: 4,
+    Image: projectimg4,
+    Projectname: "ShipZilla",
+    ProjectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus vitae tortor sapien, lectus scelerisque porttitor. Dolor nulla bibendum ",
+    ProjectLink: "",
   },
 ];
