@@ -14,8 +14,8 @@ const Header = () => {
   return (
     <header className="flex  bg-primarybg relative md:sticky md:top-0 z-50 shadow-2xl max-width2">
       <div className="flex w-full justify-between items-center px-4 md:px-10 lg:px-20">
-        <div>
-          <img src={logo} alt="Logo" className="max-w-28" />
+        <div>   
+        <Link to='/'><img src={logo} alt="Logo" className="max-w-28" /></Link> 
         </div>
         <nav className="flex justify-between items-center gap-5">
           <ul
@@ -77,7 +77,7 @@ const Header = () => {
         <div className="fixed top-0 left-0 right-0 bg-primarybg z-50 h-screen lg:hidden">
           <div className="flex justify-between py-3 px-4">
             <div>
-              <img src={logo} alt="Logo" className="max-w-28" />
+             <Link to='/'><img src={logo} alt="Logo" className="max-w-28" /></Link> 
             </div>
             <button
               className="text-xl font-extrabold bg-primarycl w-8 h-8 flex justify-center items-center text-white rounded-md"
