@@ -7,8 +7,6 @@ import avatarimg6 from "../assets/layers.png";
 import userimg1 from "../assets/userimg(1).jpg";
 import userimg2 from "../assets/userimg(2).jpg";
 import userimg3 from "../assets/userimg(3).jpg";
-import userimg4 from "../assets/userimg(4).jpg";
-import userimg5 from "../assets/userimg(5).jpg";
 import projectimg1 from "../assets/projectimg1.png";
 import projectimg2 from "../assets/projectimg2.png";
 import projectimg3 from "../assets/projectimg3.png";
@@ -25,6 +23,7 @@ export const cardsdata = [
     servicename: "Web Apps Design",
     servicedetail:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
+      duration:"600",
   },
   {
     id: 2,
@@ -32,35 +31,40 @@ export const cardsdata = [
     servicename: "Desktop App Design",
     servicedetail:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
-  },
+      duration:"1200",
+    },
   {
     id: 3,
     Image: avatarimg3,
     servicename: "Website Redesign",
     servicedetail:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
-  },
+      duration:"1800",
+    },
   {
     id: 4,
     Image: avatarimg4,
     servicename: "Mobile App Design",
     servicedetail:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
-  },
+      duration:"2400",
+    },
   {
     id: 5,
     Image: avatarimg5,
     servicename: "Software Solution",
     servicedetail:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
-  },
+      duration:"3000",
+    },
   {
     id: 6,
     Image: avatarimg6,
     servicename: "Cross Platform Mobile App",
     servicedetail:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
-  },
+      duration:"3600",
+    },
 ];
 export const teamdata = [
   {
@@ -68,31 +72,22 @@ export const teamdata = [
     Image: userimg1,
     membername: "Kevin Jeppesen",
     memberdesignation: "Web Developer",
+    duration:"600",
   },
   {
     id: 2,
     Image: userimg2,
     membername: "Kevin Wail",
     memberdesignation: "Web Designer",
+    duration:"1200",
   },
   {
     id: 3,
     Image: userimg3,
     membername: "Harry Brook",
     memberdesignation: "Project Manager",
-  },
-  {
-    id: 4,
-    Image: userimg4,
-    membername: "Jhony Bairstow",
-    memberdesignation: "CEO",
-  },
-  {
-    id: 5,
-    Image: userimg5,
-    membername: "Kevin Jeppesen",
-    memberdesignation: "Dev Ops",
-  },
+    duration:"1800",
+  }
 ];
 export const membersdata = [
   {

@@ -13,7 +13,7 @@ const OurServices = () => {
         />
         <div className="px-4 md:px-10 lg:px-20 py-20 z-20 relative max-width">
           <div className="text-center flex flex-col gap-3">
-            <h1 className="text-xl md:text-4xl font-semibold">Our Services</h1>
+            <h1 className="text-xl md:text-3xl font-semibold">Our Services</h1>
             <p className="text-base font-normal text-secondarytext">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et.
@@ -22,7 +22,10 @@ const OurServices = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-around items-center gap-5 my-10">
             {cardsdata &&
               cardsdata.map((item) => (
-                <div className="border-t-2 rounded-lg bg-white" key={item.id}>
+                <div className="border-t-2 rounded-lg bg-white transition-all duration-300 delay-100 scale-0 hover:scale-110" 
+                key={item.id} data-aos="fade-right"
+                data-aos-duration={item.duration}
+                data-aos-easing='ease'>
                   <div className="bg-primarycl h-2 w-full rounded-t-lg"></div>
                   <div className="pt-20 px-8 pb-4">
                     <div className="relative">
@@ -58,8 +61,10 @@ const OurServices = () => {
       <div className="bg-primarybg">
         <div className="max-width px-4 py-10 md:px-10 lg:px-20">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-            <div className="flex flex-col justify-center items-start gap-3">
-              <h1 className="text-xl md:text-4xl font-semibold">
+            <div className="flex flex-col justify-center items-start gap-3" data-aos="fade-right"
+                data-aos-duration='700'
+                data-aos-easing='ease'>
+              <h1 className="text-xl md:text-3xl font-semibold">
                 Helping a local <br />{" "}
                 <span className="text-primarycl">business reinvent itself</span>
               </h1>
@@ -67,10 +72,13 @@ const OurServices = () => {
                 We reached here with our hard work and dedication
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-6" >
               {membersdata &&
                 membersdata.map((item) => (
-                  <div className="flex gap-2" key={item.id}>
+                  <div className="flex gap-2" key={item.id} data-aos="fade-down"
+                  data-aos-duration='1500'
+                  data-aos-delay='500'
+                  data-aos-easing='ease'>
                     <img src={item.Image} alt="" className="w-14 h-14" />
                     <div className="flex flex-col items-start">
                       <h2 className="text-[28px] leading-9 font-bold text-primarytext">

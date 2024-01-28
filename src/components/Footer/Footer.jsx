@@ -30,7 +30,7 @@ const Footer = () => {
               <h4 className="text-xl font-semibold text-primarylinks">
                 Company
               </h4>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 text-left">
                 <Link to="/about">
                   <p className="text-sm font-normal text-footerlinks">
                     About Us
@@ -63,11 +63,11 @@ const Footer = () => {
                 Stay Up To Date
               </h4>
               <div className="flex flex-col gap-2">
-                <div className="bg-[#C2ABDB] flex justify-between items-center rounded-md py-2 px-3">
+                <div className="bg-white border-2 border-bordercl flex justify-between items-center rounded-md py-2 px-3">
                   <input
                     type="email"
                     placeholder="Your email address"
-                    className="bg-[#C2ABDB] text-black outline-none border-none focus:outline-none placeholder:!text-black"
+                    className=" bg-white text-black outline-none border-none focus:outline-none placeholder:!text-black"
                   />
                   <SiMinutemailer className="text-primarycl text-lg font-bold" />
                 </div>

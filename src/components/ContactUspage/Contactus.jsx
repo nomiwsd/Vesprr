@@ -25,8 +25,10 @@ const Contactus = () => {
         {/* HeroSection */}
         <div className="bg-primarybg">
           <div className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-10 lg:px-20 py-10 max-width">
-            <div className="flex flex-col justify-center items-start gap-3">
-              <h1 className="text-3xl md:text-5xl font-semibold">
+            <div className="flex flex-col justify-center items-start gap-3" data-aos="fade-right"
+              data-aos-duration='750'
+              data-aos-easing="ease-in">
+              <h1 className="text-2xl md:text-4xl font-semibold">
                 Stay In
                 <span className="text-primarycl"> Contact </span> <br />with us
               </h1>
@@ -39,11 +41,13 @@ const Contactus = () => {
                 </button>
               </Link>
             </div>
-            <div className="">
+            <div className="" data-aos="fade-left"
+              data-aos-duration='1000'
+              data-aos-easing="ease-in">
               <img
                 src={heroimg}
                 alt="HeroBg"
-                className="w-full relative z-30 max-h-[500px] object-fill"
+                className="w-full relative z-30 max-h-[500px] object-contain"
               />
             </div>
           </div>
@@ -52,7 +56,7 @@ const Contactus = () => {
       <div className="bg-secondarybg relative">
         <div className="px-4 md:px-10 lg:px-20 py-20 z-20 relative max-width">
           <div className="text-center flex flex-col gap-3">
-            <h1 className="text-xl md:text-4xl font-semibold">
+            <h1 className="text-xl md:text-3xl font-semibold">
               Get in touch
             </h1>
             <p className="text-base font-normal text-secondarytext">
@@ -92,7 +96,7 @@ const Contactus = () => {
           className="absolute left-0 -bottom-40 max-h-80 z-0"
         />
       </div>
-      <div className="relative h-screen">
+      <div className="relative">
         <img
           src={herobg}
           alt=""
@@ -101,8 +105,10 @@ const Contactus = () => {
         {/* HeroSection */}
         <div className="bg-primarybg">
           <div className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-10 lg:px-20 py-10 max-width">
-            <div className="flex flex-col justify-center items-start gap-3">
-              <h1 className="text-3xl md:text-5xl font-semibold">
+            <div className="flex flex-col justify-center items-start gap-3" data-aos="fade-right"
+              data-aos-duration='750'
+              data-aos-easing="ease-in">
+              <h1 className="text-xl md:text-3xl font-semibold">
                 Lessons and insights  <br />
                 <span className="text-primarycl"> from 8 years</span>
               </h1>
@@ -115,11 +121,13 @@ const Contactus = () => {
                 </button>
               </Link>
             </div>
-            <div className="">
+            <div className="" data-aos="fade-left"
+              data-aos-duration='1000'
+              data-aos-easing="ease-in">
               <img
                 src={heroimg2}
                 alt="HeroBg"
-                className="w-full relative z-30 max-h-[500px] object-fill"
+                className="w-full relative z-30 max-h-[500px] object-contain"
               />
             </div>
           </div>
@@ -128,7 +136,7 @@ const Contactus = () => {
       <div className="">
       <div className="flex flex-col justify-center items-center gap-3">
         <h5 className="text-2xl font-bold text-primarycl">Testimonials</h5>
-        <h2 className="text-[#292525] text-2xl md:text-5xl font-bold">Our Happy Clients</h2>
+        <h2 className="text-[#292525] text-2xl md:text-4xl font-bold">Our Happy Clients</h2>
       </div>
       <div className="relative">
         <img

@@ -18,8 +18,10 @@ const Teampage = () => {
         {/* HeroSection */}
         <div className="bg-primarybg">
           <div className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-10 lg:px-20 py-10 max-width">
-            <div className="flex flex-col justify-center items-start gap-3">
-              <h1 className="text-3xl md:text-5xl font-semibold">
+            <div className="flex flex-col justify-center items-start gap-3" data-aos="fade-right"
+              data-aos-duration='750'
+              data-aos-easing="ease-in">
+              <h1 className="text-2xl md:text-4xl font-semibold">
                 The
                 <span className="text-primarycl"> Team </span>
               </h1>
@@ -32,11 +34,13 @@ const Teampage = () => {
                 </button>
               </Link>
             </div>
-            <div className="">
+            <div className="" data-aos="fade-left"
+              data-aos-duration='1000'
+              data-aos-easing="ease-in">
               <img
                 src={heroimg}
                 alt="HeroBg"
-                className="w-full relative z-30 max-h-[500px] object-fill"
+                className="w-full relative z-30 max-h-[500px] object-contain"
               />
             </div>
           </div>
@@ -51,7 +55,7 @@ const Teampage = () => {
           />
           <div className="px-4 md:px-10 lg:px-20 py-20 z-20 relative max-width">
             <div className="text-center flex flex-col gap-3">
-              <h1 className="text-xl md:text-4xl font-semibold">Our Team</h1>
+              <h1 className="text-xl md:text-3xl font-semibold">Our Team</h1>
               <p className="text-base font-normal text-secondarytext">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                 nonumy eirmod tempor invidunt ut labore et.
@@ -60,14 +64,17 @@ const Teampage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-around items-center gap-5 my-10">
               {teamdata &&
                 teamdata.map((item) => (
-                  <div className="border-2 border-bordercl shadow-lg rounded-lg bg-white" key={item.id}>
+                  <div className="border-2 border-bordercl shadow-lg rounded-lg bg-white transition-all duration-300 delay-100 scale-0 hover:scale-110" 
+                  key={item.id} data-aos="fade-right"
+                  data-aos-duration={item.duration}
+                  data-aos-easing='ease'>
                     <div className="flex flex-col justify-center items-center gap-3 py-4">
                       <div className="w-40 h-40 rounded-full bg-secondarybg">
                         <img src={item.Image} alt="" className="w-full h-full rounded-full object-fill" />
                       </div>
                       <div className="flex flex-col gap-0">
-                      <h2 className="text-2xl font-semibold text-center">{item.membername}</h2>
-                      <p className="text-lg font-medium text-center">{item.memberdesignation}</p></div>
+                      <h2 className="text-lg font-semibold text-center">{item.membername}</h2>
+                      <p className="text-base font-medium text-center">{item.memberdesignation}</p></div>
                     </div>
                   </div>
                 ))}{" "}
@@ -108,8 +115,10 @@ const Teampage = () => {
       <div className="bg-primarybg my-6">
         <div className="max-width px-4 py-10 md:px-10 lg:px-20">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-            <div className="flex flex-col justify-center items-start gap-3">
-              <h1 className="text-xl md:text-4xl font-semibold">
+            <div className="flex flex-col justify-center items-start gap-3" data-aos="fade-right"
+                data-aos-duration='700'
+                data-aos-easing='ease'>
+              <h1 className="text-xl md:text-3xl font-semibold">
                 Helping a local <br />{" "}
                 <span className="text-primarycl">business reinvent itself</span>
               </h1>
@@ -120,7 +129,10 @@ const Teampage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-6">
               {membersdata &&
                 membersdata.map((item) => (
-                  <div className="flex gap-2" key={item.id}>
+                  <div className="flex gap-2" key={item.id} data-aos="fade-down"
+                  data-aos-duration='1500'
+                  data-aos-delay='500'
+                  data-aos-easing='ease'>
                     <img src={item.Image} alt="" className="w-14 h-14" />
                     <div className="flex flex-col items-start">
                       <h2 className="text-[28px] leading-9 font-bold text-primarytext">

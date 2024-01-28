@@ -12,7 +12,7 @@ const Header = () => {
     setMenuOpen(false);
   };
   return (
-    <header className="flex  bg-primarybg relative md:sticky md:top-0 z-50 shadow-2xl max-width2">
+    <header className="flex bg-primarybg sticky top-0 z-50 w-full shadow-2xl max-width2">
       <div className="flex w-full justify-between items-center px-4 md:px-10 lg:px-20">
         <div>   
         <Link to='/'><img src={logo} alt="Logo" className="max-w-28" /></Link> 
@@ -50,14 +50,6 @@ const Header = () => {
                 {" "}
                 <p className="text-primarylinks text-base font-medium leading-6 group-hover:text-primarycl">
                   Our Team
-                </p>{" "}
-              </Link>
-            </li>
-            <li className="group hover:border-b-2 hover:border-b-primarycl pt-7 pb-5 h-20">
-              <Link to="/">
-                {" "}
-                <p className="text-primarylinks text-basefont-medium leading-6 group-hover:text-primarycl">
-                  FAQ
                 </p>{" "}
               </Link>
             </li>
@@ -113,13 +105,6 @@ const Header = () => {
                 <Link to="/teampage" onClick={closeMenu}>
                   <p className="text-base font-medium text-center leading-6 group-hover:text-primarycl">
                     Our Team
-                  </p>
-                </Link>
-              </li>
-              <li className="group hover:border-b-2 hover:border-b-primarycl pt-4 pb-4">
-                <Link to="/" onClick={closeMenu}>
-                  <p className="text-base font-medium text-center leading-6 group-hover:text-primarycl">
-                    FAQ
                   </p>
                 </Link>
               </li>

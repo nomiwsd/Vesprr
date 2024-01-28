@@ -25,8 +25,10 @@ const Aboutus = () => {
         {/* HeroSection */}
         <div className="bg-primarybg">
           <div className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-10 lg:px-20 py-10 max-width">
-            <div className="flex flex-col justify-center items-start gap-3">
-              <h1 className="text-3xl md:text-5xl font-semibold">
+            <div className="flex flex-col justify-center items-start gap-3" data-aos="fade-right"
+              data-aos-duration='750'
+              data-aos-easing="ease-in">
+              <h1 className="text-2xl md:text-4xl font-semibold">
                 A little bit
                 <span className="text-primarycl"> about us</span>
               </h1>
@@ -39,11 +41,13 @@ const Aboutus = () => {
                 </button>
               </Link>
             </div>
-            <div className="">
+            <div className="" data-aos="fade-left"
+              data-aos-duration='1000'
+              data-aos-easing="ease-in">
               <img
                 src={heroimg}
                 alt="HeroBg"
-                className="w-full relative z-30 max-h-[500px] object-fill"
+                className="w-full relative z-30 max-h-[500px] object-contain"
               />
             </div>
           </div>
@@ -57,7 +61,10 @@ const Aboutus = () => {
             </h1>
           </div>
           <div className="flex flex-col md:flex-row gap-6 my-10">
-            <div className="flex flex-col gap-4 w-full md:w-3/4">
+            <div className="flex flex-col gap-4 w-full md:w-3/4" data-aos="fade-left"
+              data-aos-duration='1500'
+              data-aos-delay='1000'
+              data-aos-easing="ease-in">
               <div className="flex flex-col gap-2">
                 <h3 className="text-lg font-bold text-[#181818]">Who We Are</h3>
                 <p className="text-base font-normal text-[#7D7D7D]">We are a multi-disciplinary front-end engineer and UI/UX designer based in Rabat, Pakistan.</p>
@@ -93,7 +100,7 @@ const Aboutus = () => {
             <h1 className="text-xl font-semibold text-primarycl">
               Portfolio
             </h1>
-            <p className="text-2xl md:text-5xl font-bold text-[#474141]">Our Great Work</p>
+            <p className="text-2xl md:text-4xl font-bold text-[#474141]">Our Great Work</p>
 
             <div className="my-10">
               <Swiper
@@ -136,11 +143,6 @@ const Aboutus = () => {
                           alt="Your Image"
                           className="object-cover w-full h-full"
                         />
-                        <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity rounded-2xl">
-                          <div className="absolute inset-0 flex items-center justify-center">
-                            <p className="text-white text-lg font-semibold">Your Text Overlay</p>
-                          </div>
-                        </div>
                       </div>
                       <div className=" flex flex-col gap-1 py-2">
                         <h4 className="text-lg font-bold text-[#474141]">{item.Projectname}</h4>

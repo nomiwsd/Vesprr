@@ -20,8 +20,10 @@ const Services = () => {
         {/* HeroSection */}
         <div className="bg-primarybg">
           <div className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-10 lg:px-20 py-10 max-width">
-            <div className="flex flex-col justify-center items-start gap-3">
-              <h1 className="text-3xl md:text-5xl font-semibold">
+            <div className="flex flex-col justify-center items-start gap-3" data-aos="fade-right"
+              data-aos-duration='750'
+              data-aos-easing="ease-in">
+              <h1 className="text-xl md:text-4xl font-semibold">
                 What we can offer your <br />{" "}
                 <span className="text-primarycl">Business</span>
               </h1>
@@ -37,11 +39,13 @@ const Services = () => {
                 </button>
               </Link>
             </div>
-            <div className="">
+            <div className=""data-aos="fade-left"
+              data-aos-duration='1000'
+              data-aos-easing="ease-in">
               <img
                 src={heroimg}
                 alt="HeroBg"
-                className="w-full relative z-30 max-h-[500px] object-fill"
+                className="w-full relative z-30 max-h-[500px] object-contain"
               />
             </div>
           </div>
@@ -54,7 +58,7 @@ const Services = () => {
           />
           <div className="px-4 md:px-10 lg:px-20 py-20 z-20 relative max-width">
             <div className="text-center flex flex-col gap-3">
-              <h1 className="text-xl md:text-4xl font-semibold">
+              <h1 className="text-xl md:text-3xl font-semibold">
                 Our Services
               </h1>
               <p className="text-base font-normal text-secondarytext">
@@ -65,7 +69,10 @@ const Services = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-around items-center gap-5 my-10">
               {cardsdata &&
                 cardsdata.map((item) => (
-                  <div className="border-t-2 rounded-lg bg-white" key={item.id}>
+                  <div className="border-t-2 rounded-lg bg-white transition-all duration-300 delay-100 scale-0 hover:scale-110" 
+                  key={item.id} data-aos="fade-right"
+                  data-aos-duration={item.duration}
+                  data-aos-easing='ease'>
                     <div className="bg-primarycl h-2 w-full rounded-t-lg"></div>
                     <div className="pt-20 px-8 pb-4">
                       <div className="relative">
@@ -112,7 +119,7 @@ const Services = () => {
         />
         <div className="max-width px-4 md:px-10 lg:px-20 py-10 md:py-32 flex justify-center items-center relative z-30">
           <div className="flex flex-col gap-4 justify-center items-center">
-            <h2 className="text-2xl md:text-5xl font-bold text-center">
+            <h2 className="text-2xl md:text-4xl font-bold text-center">
               Interested to work with us ?
             </h2>
             <p className="text-lg md:text-2xl font-normal font-dmsans">
@@ -132,7 +139,7 @@ const Services = () => {
         />
         <div className="max-width flex flex-col md:flex-row px-4 md:px-10 lg:px-20 py-20">
           <div className="flex flex-col gap-4 w-full md:w-1/2">
-            <h3 className="text-2xl md:text-4xl font-bold w-full text-center">
+            <h3 className="text-xl md:text-3xl font-bold w-full text-center">
               Establishing online presence
             </h3>
             <div className="flex flex-col gap-3">
@@ -167,7 +174,7 @@ const Services = () => {
             </div>
           </div>
           <div className="flex flex-col gap-4 w-full md:w-1/2">
-          <h3 className="text-2xl md:text-4xl text-primarycl font-bold w-full text-center">
+          <h3 className="text-xl md:text-3xl text-primarycl font-bold w-full text-center">
           Schedule a Free Session</h3>
           <div>
             <img src={scheduleimg} alt="" className="w-full h-full object-cover" />
