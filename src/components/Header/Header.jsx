@@ -10,19 +10,23 @@ const Header = () => {
   };
   const closeMenu = () => {
     setMenuOpen(false);
+    scrollToTop();
+  };
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
-    <header className="flex bg-primarybg sticky top-0 z-50 w-full shadow-2xl max-width2">
-      <div className="flex w-full justify-between items-center px-4 md:px-10 lg:px-20">
-        <div>   
-        <Link to='/'><img src={logo} alt="Logo" className="max-w-28" /></Link> 
+    <header className="flex bg-primarybg sticky top-0 z-50 w-full shadow-2xl ">
+      <div className="flex w-full justify-between items-center px-4 md:px-10 lg:px-20 max-width2">
+        <div>
+          <Link to='/'><img src={logo} alt="Logo" className="max-w-28" /></Link>
         </div>
         <nav className="flex justify-between items-center gap-5">
           <ul
             className={`hidden md:flex flex-row justify-center items-center gap-8`}
           >
             <li className="group hover:border-b-2 hover:border-b-primarycl pt-7 pb-5 h-20">
-              <Link to="/">
+              <Link to="/" onClick={scrollToTop}>
                 {" "}
                 <p className="text-primarylinks text-base font-medium leading-6 group-hover:text-primarycl">
                   Home
@@ -30,7 +34,7 @@ const Header = () => {
               </Link>
             </li>
             <li className="group hover:border-b-2 hover:border-b-primarycl pt-7 pb-5 h-20">
-              <Link to="/service">
+              <Link to="/service" onClick={scrollToTop}>
                 {" "}
                 <p className="text-primarylinks text-base font-medium leading-6 group-hover:text-primarycl">
                   Services
@@ -38,7 +42,7 @@ const Header = () => {
               </Link>
             </li>
             <li className="group hover:border-b-2 hover:border-b-primarycl pt-7 pb-5 h-20">
-              <Link to="/about">
+              <Link to="/about" onClick={scrollToTop}>
                 {" "}
                 <p className="text-primarylinks text-base font-medium leading-6 group-hover:text-primarycl">
                   About
@@ -46,7 +50,7 @@ const Header = () => {
               </Link>
             </li>
             <li className="group hover:border-b-2 hover:border-b-primarycl pt-7 pb-5 h-20">
-              <Link to="/teampage">
+              <Link to="/teampage" onClick={scrollToTop}>
                 {" "}
                 <p className="text-primarylinks text-base font-medium leading-6 group-hover:text-primarycl">
                   Our Team
@@ -54,7 +58,7 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <Link to="/contactus">
+          <Link to="/contactus" onClick={scrollToTop}>
             <button className="hidden md:block bg-primarycl text-white text-sm font-medium text-center px-3 py-2 rounded-md">
               Contact Us
             </button>
@@ -69,7 +73,7 @@ const Header = () => {
         <div className="fixed top-0 left-0 right-0 bg-primarybg z-50 h-screen lg:hidden">
           <div className="flex justify-between py-3 px-4">
             <div>
-             <Link to='/'><img src={logo} alt="Logo" className="max-w-28" /></Link> 
+              <Link to='/'><img src={logo} alt="Logo" className="max-w-28" /></Link>
             </div>
             <button
               className="text-xl font-extrabold bg-primarycl w-8 h-8 flex justify-center items-center text-white rounded-md"
@@ -115,7 +119,7 @@ const Header = () => {
               </button>
             </Link>
           </nav>
-          
+
         </div>
       )}
     </header>

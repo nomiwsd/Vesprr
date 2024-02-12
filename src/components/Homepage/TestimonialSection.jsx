@@ -13,8 +13,8 @@ const TestimonialSection = () => {
   return (
     <section className="overflow-hidden">
       <div className="flex flex-col justify-center items-center gap-3">
-        <h5 className="text-2xl font-bold text-primarycl">Testimonials</h5>
-        <h2 className="text-[#292525] text-2xl md:text-5xl font-bold">Our Happy Clients</h2>
+        <h5 className="text-xl font-bold text-primarycl">Testimonials</h5>
+        <h2 className="text-[#292525] text-2xl md:text-4xl font-bold">Our Happy Clients</h2>
       </div>
       <div className="relative">
         <img
@@ -32,7 +32,7 @@ const TestimonialSection = () => {
           pagination={true}
           navigation={true}
           modules={[Navigation, Pagination]}
-          className="mySwiper max-width px-4 md:px-20 my-20 z-40 flex flex-col justify-center items-center"
+          className="mySwiper max-width px-4 md:px-20 my-20 z-40 flex flex-col justify-center items-center max-w-full md:max-w-[60%]"
         >
           <SwiperSlide>
             <div className="flex flex-col justify-center items-center w-full  bg-[#FDFDFF] border-2 rounded-xl py-5 px-5">
@@ -44,7 +44,7 @@ const TestimonialSection = () => {
                 <FaStar className="text-primarycl text-2xl font-bold" />
                 <FaStar className="text-primarycl text-2xl font-bold" />
               </div>
-              <p className="text-2xl font-medium italic text-center text-[#292525] h-[430px] md:h-full">
+              <p className="text-xl font-medium italic text-center text-[#292525] h-[430px] md:h-full">
                 We tried several agencies before we found daCode. Has been a
                 pleasure to work with and will soon start the next project with
                 our second brand.
@@ -53,7 +53,7 @@ const TestimonialSection = () => {
                 <img src={avatarimg1} alt="" />
               </div>
               <div className="flex flex-col items-center gap-3">
-                <p className="text-xl font-bold">Paulus Haverinen</p>
+                <p className="text-lg font-bold">Paulus Haverinen</p>
                 <p className="text-base font-extralight text-primarycl ">
                   Owner, Ikirakenne Ltd
                 </p>

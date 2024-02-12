@@ -42,7 +42,7 @@ const Contactus = () => {
               </Link>
             </div>
             <div className="" data-aos="fade-left"
-              data-aos-duration='1000'
+              data-aos-duration='750'
               data-aos-easing="ease-in">
               <img
                 src={heroimg}
@@ -122,7 +122,7 @@ const Contactus = () => {
               </Link>
             </div>
             <div className="" data-aos="fade-left"
-              data-aos-duration='1000'
+              data-aos-duration='750'
               data-aos-easing="ease-in">
               <img
                 src={heroimg2}
@@ -154,7 +154,7 @@ const Contactus = () => {
           pagination={true}
           navigation={true}
           modules={[Navigation, Pagination]}
-          className="mySwiper max-width px-4 md:px-20 my-20 z-40 flex flex-col justify-center items-center"
+          className="mySwiper max-width px-4 md:px-20 my-20 z-40 flex flex-col justify-center items-center max-w-full md:max-w-[60%]"
         >
           <SwiperSlide>
             <div className="flex flex-col justify-center items-center w-full  bg-[#FDFDFF] border-2 rounded-xl py-5 px-5">

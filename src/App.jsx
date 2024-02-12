@@ -19,7 +19,7 @@ function App() {
     );
   })
   return (
-    <div className="App">
+    <div className="App text-[#555]">
       <Router>
         <Header />
         <Routes>

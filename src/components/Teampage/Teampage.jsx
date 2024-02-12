@@ -35,7 +35,7 @@ const Teampage = () => {
               </Link>
             </div>
             <div className="" data-aos="fade-left"
-              data-aos-duration='1000'
+              data-aos-duration='750'
               data-aos-easing="ease-in">
               <img
                 src={heroimg}
@@ -116,7 +116,7 @@ const Teampage = () => {
         <div className="max-width px-4 py-10 md:px-10 lg:px-20">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <div className="flex flex-col justify-center items-start gap-3" data-aos="fade-right"
-                data-aos-duration='700'
+                data-aos-duration='500'
                 data-aos-easing='ease'>
               <h1 className="text-xl md:text-3xl font-semibold">
                 Helping a local <br />{" "}
@@ -130,8 +130,7 @@ const Teampage = () => {
               {membersdata &&
                 membersdata.map((item) => (
                   <div className="flex gap-2" key={item.id} data-aos="fade-down"
-                  data-aos-duration='1500'
-                  data-aos-delay='500'
+                  data-aos-duration='1000'
                   data-aos-easing='ease'>
                     <img src={item.Image} alt="" className="w-14 h-14" />
                     <div className="flex flex-col items-start">

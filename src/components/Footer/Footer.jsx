@@ -9,7 +9,7 @@ const Footer = () => {
     <footer>
       <div className="bg-primarybg relative z-10">
         <div
-          className="flex flex-col md:flex-row justify-between items-center  px-4 py-16 md:px-16 lg:px-20 max-width bg-auto bg-no-repeat bg-left"
+          className="flex flex-col md:flex-row justify-between items-start md:items-center  px-4 py-16 md:px-16 lg:px-20 max-width bg-auto bg-no-repeat bg-left"
           style={{
             backgroundImage: `url(${footerbg})`,
           }}
@@ -18,7 +18,7 @@ const Footer = () => {
             <div>
               <img src={logo} alt="Logo" className="max-w-28" />
             </div>
-            <p className="text-xl font-normal font-dmsans ">
+            <p className="text-sm font-normal font-dmsans max-w-80">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
               mollitia provident obcaecati accusamus aut, sapiente quia nulla
               temporibus ab, aliquam repellat, modi laborum quas incidunt.
@@ -26,7 +26,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex flex-col md:flex-row justify-start  gap-4">
-            <div className="flex flex-col items-start md:text-center md:items-center gap-4">
+            <div className="flex flex-col justify-start items-start  gap-2">
               <h4 className="text-xl font-semibold text-primarylinks">
                 Company
               </h4>
@@ -58,7 +58,7 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex flex-col justify-start items-start gap-4">
+            <div className="flex flex-col justify-start items-start  gap-4">
               <h4 className="text-xl text-left font-semibold text-primarylinks">
                 Stay Up To Date
               </h4>

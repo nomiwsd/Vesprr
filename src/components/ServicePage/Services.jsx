@@ -40,7 +40,7 @@ const Services = () => {
               </Link>
             </div>
             <div className=""data-aos="fade-left"
-              data-aos-duration='1000'
+              data-aos-duration='750'
               data-aos-easing="ease-in">
               <img
                 src={heroimg}
@@ -66,38 +66,38 @@ const Services = () => {
                 diam nonumy eirmod tempor invidunt ut labore et.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-around items-center gap-5 my-10">
-              {cardsdata &&
-                cardsdata.map((item) => (
-                  <div className="border-t-2 rounded-lg bg-white transition-all duration-300 delay-100 scale-0 hover:scale-110" 
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-around items-center gap-5 my-10">
+            {cardsdata &&
+              cardsdata.map((item) => (
+                <div className="border-t-2 rounded-lg bg-white transition-all duration-300 delay-100 scale-0 hover:scale-110"
                   key={item.id} data-aos="fade-right"
                   data-aos-duration={item.duration}
                   data-aos-easing='ease'>
-                    <div className="bg-primarycl h-2 w-full rounded-t-lg"></div>
-                    <div className="pt-20 px-8 pb-4">
-                      <div className="relative">
-                        <div className="absolute -left-2 -top-2 w-12 h-12 rounded-full bg-primarycl opacity-20"></div>
-
-                        <div className="flex flex-col gap-4">
-                          <img src={item.Image} alt="" className="w-14 h-14" />
-                          <div className="flex flex-col gap-2">
-                            <h2 className="text-xl font-bold text-[#292525]">
-                              {item.servicename}
-                            </h2>
-                            <p className="text-base font-medium font-dmsans">
-                              {item.servicedetail}
-                            </p>
-                            <p className="text-sm font-bold text-secondarylinks flex items-center gap-2">
-                              Read More{" "}
-                              <CgArrowLongRight className="text-lg font-bold" />
-                            </p>
-                          </div>
+                  <div className="bg-primarycl h-2 w-full rounded-t-lg"></div>
+                  <div className="pt-16 px-8 pb-4">
+                    <div className="relative">
+                      
+                    <div className="flex justify-center items-center w-20 h-20 rounded-full absolute -left-4 -top-4 bg-primarycl opacity-20"></div>
+                      <div className="flex flex-col gap-4">
+                          <img src={item.Image} alt="" className="w-12 h-12" />
+                        <div className="flex flex-col gap-2 max-h-52">
+                          <h2 className="text-xl font-semibold text-[#292525]">
+                            {item.servicename}
+                          </h2>
+                          <p className="text-base font-medium font-dmsans">
+                            {item.servicedetail}
+                          </p>
+                          <p className="text-sm font-bold text-secondarylinks flex items-center gap-2">
+                            Read More{" "}
+                            <CgArrowLongRight className="text-lg font-bold" />
+                          </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                ))}{" "}
-            </div>
+                </div>
+              ))}{" "}
+          </div>
           </div>
           <img
             src={servicebg2}

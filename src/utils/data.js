@@ -31,7 +31,7 @@ export const cardsdata = [
     servicename: "Desktop App Design",
     servicedetail:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
-      duration:"1200",
+      duration:"900",
     },
   {
     id: 3,
@@ -39,7 +39,7 @@ export const cardsdata = [
     servicename: "Website Redesign",
     servicedetail:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
-      duration:"1800",
+      duration:"1200",
     },
   {
     id: 4,
@@ -47,7 +47,7 @@ export const cardsdata = [
     servicename: "Mobile App Design",
     servicedetail:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
-      duration:"2400",
+      duration:"1500",
     },
   {
     id: 5,
@@ -55,7 +55,7 @@ export const cardsdata = [
     servicename: "Software Solution",
     servicedetail:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
-      duration:"3000",
+      duration:"1800",
     },
   {
     id: 6,
@@ -63,7 +63,7 @@ export const cardsdata = [
     servicename: "Cross Platform Mobile App",
     servicedetail:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
-      duration:"3600",
+      duration:"2100",
     },
 ];
 export const teamdata = [
@@ -72,21 +72,21 @@ export const teamdata = [
     Image: userimg1,
     membername: "Kevin Jeppesen",
     memberdesignation: "Web Developer",
-    duration:"600",
+    duration:"500",
   },
   {
     id: 2,
     Image: userimg2,
     membername: "Kevin Wail",
     memberdesignation: "Web Designer",
-    duration:"1200",
+    duration:"1000",
   },
   {
     id: 3,
     Image: userimg3,
     membername: "Harry Brook",
     memberdesignation: "Project Manager",
-    duration:"1800",
+    duration:"1500",
   }
 ];
 export const membersdata = [

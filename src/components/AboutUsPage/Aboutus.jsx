@@ -42,7 +42,7 @@ const Aboutus = () => {
               </Link>
             </div>
             <div className="" data-aos="fade-left"
-              data-aos-duration='1000'
+              data-aos-duration='750'
               data-aos-easing="ease-in">
               <img
                 src={heroimg}
@@ -62,9 +62,8 @@ const Aboutus = () => {
           </div>
           <div className="flex flex-col md:flex-row gap-6 my-10">
             <div className="flex flex-col gap-4 w-full md:w-3/4" data-aos="fade-left"
-              data-aos-duration='1500'
-              data-aos-delay='1000'
-              data-aos-easing="ease-in">
+              data-aos-duration='500'
+              data-aos-easing="ease-out">
               <div className="flex flex-col gap-2">
                 <h3 className="text-lg font-bold text-[#181818]">Who We Are</h3>
                 <p className="text-base font-normal text-[#7D7D7D]">We are a multi-disciplinary front-end engineer and UI/UX designer based in Rabat, Pakistan.</p>

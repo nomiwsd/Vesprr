@@ -5,7 +5,6 @@ import heroimg2 from "../../assets/Frame35.png";
 const HeroSection = () => {
   return (
     <div className="relative">
-
       <div className="relative overflow-hidden">
         <img src={herobg} alt="" className="absolute z-20 right-0 top-[35%] h-80" />
         {/* HeroSection */}
@@ -29,7 +28,7 @@ const HeroSection = () => {
               </Link>
             </div>
             <div className="" data-aos="fade-left"
-              data-aos-duration='1000'
+              data-aos-duration='750'
               data-aos-easing="ease-in">
               <img
                 src={heroimg}
